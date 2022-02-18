@@ -16,17 +16,18 @@ header{
     height: 50px;
 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: end;
     align-items: center;
 }
+
 
 nav{
     width: 100%;
     max-width: 1000px;
 }
 
-#menu-list{
+.menu-list{
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -406,6 +407,85 @@ footer > section{
         font-size: 55%;
     }
 
+    /*Menu*/
+
+    .menu{
+        display: none;
+    }
+    
+
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    .one,.two,.three{
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+
+    .menu-section.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #003F88;
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .menu-section.on .menu{
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle{
+        position: absolute;
+        right: 5vw;
+        top:20px;
+    }
+
+    /*Transitions*/
+
+    .menu-section.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-link{
+        transition-duration: 0.5s;
+        font-size: 2.5rem;
+        line-height: 8rem;
+        font-weight: 400;
+    }
+
+    /*Menu List*/
+    .menu-section.on .menu .menu-list{
+        display: block;
+        text-align: center;
+    }
+
+    /*Others Elements*/
+
     #elements{
         display: flex;
         flex-direction: column;
@@ -488,10 +568,6 @@ footer > section{
         
     }
 
-    #menu{
-        display: none;
-    }
-
     #presentation-one-title{
         font-size: 3.5rem;
     }
@@ -504,6 +580,10 @@ footer > section{
         font-size: 1.6rem;
     }
 
+    #presentation-one{
+        margin-top: 20px;
+    }
+
     .project{
         width: 400px;
     }
@@ -514,6 +594,10 @@ footer > section{
 
     .elements-section{
         width: 350px;
+    }
+
+    #about{
+        gap: 30px;
     }
 
     .div-about-right{
@@ -531,6 +615,15 @@ footer > section{
         display: flex;
         flex-direction: column;
         gap: 30px;
+    }
+
+    .praragraph-currently{
+        font-size: 2rem;
+    }
+
+    .div-currently {
+        width: 270px;
+        height: 380px;
     }
 
 }
@@ -562,5 +655,10 @@ footer > section{
 
     .projects-title{
         font-size: 1.8rem;
+    }
+
+    .div-currently {
+        width: 235px;
+     
     }
 }

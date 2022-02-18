@@ -9,15 +9,22 @@
 </head>
 <body>
     <header>
-        <nav id="menu">
-            <ul id="menu-list">
-                <li><a class="menu-link" href="#">Inicio</a></li>
-                <li><a class="menu-link" href="#">Projetos</a></li>
-                <li><a class="menu-link" href="#">Manutenções</a></li>
-                <li><a class="menu-link" href="#">Sobre</a></li>
-                <li><a class="menu-link" href="#">Contato</a></li>
-            </ul>
-        </nav>
+        <section class="menu-section">
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li><a class="menu-link" href="#">Inicio</a></li>
+                    <li><a class="menu-link" href="#">Projetos</a></li>
+                    <li><a class="menu-link" href="#">Manutenções</a></li>
+                    <li><a class="menu-link" href="#">Sobre</a></li>
+                    <li><a class="menu-link" href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main>
         <!--Apresentação-->
@@ -39,12 +46,12 @@
         <section class="section-projects">
             <h2 class="projects-title">Desenvolvendo com JavaScript</h1>
             <div class="projects">
-                <img class="project" src="image/projetosJs/conversorMoeda.jpg" alt="Site conversor de moeda">
-                <img class="project" src="image/projetosJs/EditorCor.jpg" alt="Site editor de cores em hexadecimal">
+                <a href=""><img class="project" src="image/projetosJs/conversorMoeda.jpg" alt="Site conversor de moeda"></a>
+                <a href="https://thiagobenevide.github.io/editor-colors/" target="_blank"><img class="project" src="image/projetosJs/EditorCor.jpg" alt="Site editor de cores em hexadecimal"></a>
             </div>
             <div class="projects">
-                <img class="project" src="image/projetosJs/listaCompras.jpg" alt="Site de lista de Compras">
-                <img class="project" src="image/projetosJs/conversorMoeda.jpg" alt="teste">
+                <a href="https://thiagobenevide.github.io/shopping-list/" target="_blank"><img class="project" src="image/projetosJs/listaCompras.jpg" alt="Site de lista de Compras"></a>
+                <a href=""><img class="project" src="image/projetosJs/conversorMoeda.jpg" alt="teste"></a>
             </div>
 
             
@@ -54,12 +61,12 @@
         <section class="section-projects">
             <h2 class="projects-title">Utilizando apenas CSS e HTML</h1>
             <div class="projects">
-                <img class="project" src="image/projetosCss/mascoteAndroid.jpg" alt="Site sobre o mascote android">
-                <img class="project" src="image/projetosCss/formulario.jpg" alt="Formulário Web">
+                <a href="https://thiagobenevide.github.io/android-mascot/" target="_blank"><img class="project" src="image/projetosCss/mascoteAndroid.jpg" alt="Site sobre o mascote android"></a>
+                <a href=""><img class="project" src="image/projetosCss/formulario.jpg" alt="Formulário Web"></a>
             </div>
             <div class="projects">
-                <img class="project" src="image/projetosCss/canalmeexplica.jpg" alt="Site canal me explica">
-                <img class="project" src="image/projetosCss/infoinvest.jpg" alt="Página de Cadastro Info Invest">
+                <a href=""><img class="project" src="image/projetosCss/canalmeexplica.jpg" alt="Site canal me explica"></a>
+                <a href="https://thiagobenevide.github.io/cadastro-entrar/" target="_blank"><img class="project" src="image/projetosCss/infoinvest.jpg" alt="Página de Cadastro Info Invest"></a>
             </div>
         </section>
 
@@ -71,17 +78,17 @@
                 
                 <div class="elements-section">
                     <h3 class="element-title">Como deixar o Windows 10 mais Rápido</h3>
-                    <img class="element-image" src="image/harware/windowsRápido.jpg" alt="#">
+                    <a href=""><img class="element-image" src="image/harware/windowsRápido.jpg" alt="#"></a>
                     <button class="element-button">Assistir</button>
                 </div>
                 <div class="elements-section">
                     <h3 class="element-title">Como Trocar a pasta Térmica do Computador</h3>
-                    <img class="element-image" src="image/harware/windowsRápido.jpg" alt="#">
+                    <a href=""><img class="element-image" src="image/harware/windowsRápido.jpg" alt="#"></a>
                     <button class="element-button">Assistir</button>
                 </div>
                 <div class="elements-section">
                     <h3 class="element-title">Como Evitar a Tela Azul do Windows</h3>
-                    <img class="element-image" src="image/harware/pontoRestauracao.jpg" alt="#">
+                    <a href=""><img class="element-image" src="image/harware/pontoRestauracao.jpg" alt="#"></a>
                     <button class="element-button">Assistir</button>
                 </div>
             </section>
@@ -161,5 +168,7 @@
             </div>
         </section>
     </footer>
+
+    <script src="index-Script.js"></script>
 </body>
 </html>
