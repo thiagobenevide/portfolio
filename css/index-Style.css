@@ -147,6 +147,7 @@ nav{
 .project{
     width: 500px;
     border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.212);
 
 }
 
@@ -182,6 +183,8 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 50px;
+
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.212);  
 
     width: 420px;
 }
@@ -254,6 +257,7 @@ nav{
 .image-about{
     width: 350px;
     border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.308); 
 }
 
 .paragraph-about{
