@@ -58,6 +58,3 @@ if(target.length){
         console.log("asdasd")
     }, 100))
 }
-
-
-
