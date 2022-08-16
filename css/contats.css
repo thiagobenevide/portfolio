@@ -76,7 +76,7 @@ a{
     font-size: 1.9rem;
     width: 160px;
     height: 40px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.151);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.404);
     cursor: pointer;
 }
 
@@ -175,24 +175,12 @@ label{
 
 
 
-@media(max-height:500px){
-    main{
-        height: 400px;
-    }
-}
 
-
-@media(max-width: 550px){
-    main {
-        width: 480px;
-        height: 707px;
-    }
-}
 
 @media(max-width: 500px){
     main {
         width: 400px;
-        height: 707px;
+        height: 400px;
     }
 
 }
@@ -200,7 +188,8 @@ label{
 @media (max-width: 420px){
     main {
         width: 340px;
-        height: 850px;
+        height: 400px;
+
     }
 
     #socialNetworks{
